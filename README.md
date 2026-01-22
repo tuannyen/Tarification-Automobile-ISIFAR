@@ -7,7 +7,6 @@ Ce dépôt présente une chaîne complète de tarification actuarielle, de la pr
 L'enjeu est d'estimer la prime pure $\pi = \mathbb{E}[N] \times \mathbb{E}[Y]$ en modélisant séparément la fréquence et la sévérité des sinistres.
 
 ## Méthodologie et Modèles
-Le projet compare des approches classiques (GLM) et des méthodes de Machine Learning :
 - **Fréquence des sinistres ($N$) :** Modélisation par régression **Binomiale Négative** pour traiter la surdispersion observée par rapport à une loi de Poisson.
 - **Sévérité des sinistres ($Y$) :** Modélisation par **loi Gamma** (lien log), structurellement adaptée aux coûts positifs et asymétriques.
 - **Machine Learning :** Utilisation de l'algorithme **XGBoost** pour la classification des sinistres.
